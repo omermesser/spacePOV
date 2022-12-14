@@ -1,0 +1,50 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.container-3d{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective-origin: 50% 50%;
+    background-color: black;
+}
+.container-3d .celestial{ 
+    border-radius: 50%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+#ground{
+    transform-style: preserve-3d;
+    position: absolute;
+    border-radius: 50%;
+    transform-origin: center top;
+    background-color: #3D8361;
+}
+#alt0{
+    transform-style: preserve-3d;
+    position: absolute;
+    background-color:white;
+    height: 10px;
+    width: 150%;
+}
+.compass{
+    transform-style: preserve-3d;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 50px;
+}
